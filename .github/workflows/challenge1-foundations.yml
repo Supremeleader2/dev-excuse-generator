@@ -20,9 +20,11 @@ jobs:
         run: npm install
       - name: Run linter
         run: npm run lint
+      - name: Run Format 
+        run: npm run format
       - name: Run prettier check
         run: npm run format:check
-        
+
   deploy:
     needs: quality
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
