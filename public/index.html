@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Excuse Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Dev Excuse Generator</h1>
+      <p>Generate absurd excuses for developers.</p>
+
+      <label for="category">Choose a category</label>
+      <select id="category">
+        <option value="">-- Select one --</option>
+        <option value="bug">Bug</option>
+        <option value="deadline">Deadline</option>
+        <option value="meeting">Meeting</option>
+        <option value="production">Production</option>
+      </select>
+
+      <button id="generateBtn">Generate Excuse</button>
+
+      <section class="result-card">
+        <h2>Generated Excuse</h2>
+        <p id="result">Your excuse will appear here.</p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
